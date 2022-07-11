@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteRule ^home$ index.php?pg=home [L]
+RewriteRule ^tour$ index.php?pg=tour [L]
+RewriteRule ^tentang$ index.php?pg=tentang [L]
+RewriteRule ^bantuan$ index.php?pg=bantuan [L]
+RewriteRule ^tour([0-9])-(.*)$ index.php?pg=tourx&gd=$1&lt=$2 [L]
+
+</IfModule>
